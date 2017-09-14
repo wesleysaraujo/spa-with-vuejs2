@@ -2,6 +2,8 @@
 
 > Mini rede social com VueJs
 
+Esse repositório é um objeto de estudo da série de artigos: [Aplicação SPA com Vuejs](https://medium.com/@wesleysaraujo/redesocial-spa-com-vuejs-2-parte-1-95549f49d755)
+
 ## Build Setup
 
 ``` bash
