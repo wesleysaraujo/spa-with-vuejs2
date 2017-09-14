@@ -3,4 +3,36 @@
 @import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "./bootswatch";
 
-#app {padding-top: 60px;}
+html {
+  position: relative;
+  min-height: 100%;
+
+  body {
+    /* Margin bottom by footer height */
+    padding-top: 60px;
+
+    > .container {
+      padding: 60px 15px 0;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        /* Set the fixed height of the footer here */
+        height: 60px;
+        background-color: #f5f5f5;
+        padding-top: 20px;
+
+        > .container {
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+    }
+
+    .container .text-muted {
+      margin: 20px 0;
+    }
+
+  }
+}
