@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
+      <div class="container-fluid">
         <nav-brand />
         <div class="navbar-collapse collapse" id="navbar-main">
           <nav-left />

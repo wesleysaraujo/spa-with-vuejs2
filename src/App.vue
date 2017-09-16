@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <MainHeader />
-    <div class="container">
+    <div class="container-fluid">
       <img src="./assets/logo.png">
       <router-view></router-view>
       <button type="button" name="button" class="btn btn-primary">Olá mundo</button>

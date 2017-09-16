@@ -1,7 +1,7 @@
 <template>
 	<ul class="nav navbar-nav navbar-right">
 	  <li>
-      <a href="#">Contato</a>
+      <a href="#"><i class="fa fa-bell"></i></a>
     </li>
     <li>
       <a href="#">Login</a>
