@@ -1,11 +1,11 @@
 <template>
 	<ul class="nav navbar-nav navbar-right">
-	  <li>
-      <a href="#"><i class="fa fa-bell"></i></a>
-    </li>
-    <li>
-      <a href="#">Login</a>
-    </li>
+		<router-link to="/" tag="li" exact>
+			<a><i class="fa fa-bell"></i></a>
+    </router-link>
+		<router-link to="/login" tag="li" exact>
+      <a>Login</a>
+    </router-link>
   </ul>
 </template>
 

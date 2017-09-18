@@ -1,8 +1,10 @@
 <template>
   <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
-        <nav-brand />
-        <div class="navbar-collapse collapse" id="navbar-main">
+        <nav-brand @navBarCollapseAction="changeNavBarCollapseIn"/>
+        <div class="navbar-collapse collapse"
+             id="navbar-main"
+             :class="{in: navBarCollapseIn}">
           <nav-left />
           <nav-right />
         </div>
@@ -22,7 +24,14 @@ export default {
     NavRight
   },
   data () {
-    return {}
+    return {
+      navBarCollapseIn: false
+    }
+  },
+  methods: {
+    changeNavBarCollapseIn () {
+      this.navBarCollapseIn = !this.navBarCollapseIn
+    }
   }
 }
 </script>

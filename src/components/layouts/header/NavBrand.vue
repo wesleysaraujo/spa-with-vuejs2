@@ -1,11 +1,10 @@
 <template>
   <div class="navbar-header">
-		<a href="/" class="navbar-brand">SocialC</a>
+    <router-link to="/" class="navbar-brand">SocialC</router-link>
 		<button
 			class="navbar-toggle"
 			type="button"
-			data-toggle="collapse"
-			data-target="#navbar-main">
+      @click.prevent="toggleNavBarCollapse">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
@@ -17,6 +16,11 @@ export default {
   name: 'header-nav-brand',
   data () {
     return {}
+  },
+  methods: {
+    toggleNavBarCollapse () {
+      this.$emit('navBarCollapseAction')
+    }
   }
 }
 </script>

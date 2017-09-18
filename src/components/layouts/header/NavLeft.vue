@@ -1,11 +1,11 @@
 <template>
 	<ul class="nav navbar-nav">
-		<li>
-			<a href="#">Amigos</a>
-		</li>
-		<li>
-			<a href="#">Publicações</a>
-		</li>
+		<router-link to="/" tag="li" exact>
+      <a>Amigos</a>
+    </router-link>
+		<router-link to="/" tag="li" exact>
+      <a>Publicações</a>
+    </router-link>
 	</ul>
 </template>
 
